@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="shortcut icon" href="./picture/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swiper</title>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+
+    <body>
+        <div class="democontainer">
+            <div class="top">
+                <div class="toptitle">
+                    <a href="./tech-demo-menu.html"><img src="./picture/logo.png" alt=""></a>
+                </div>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                    aria-controls="offcanvasWithBothOptions">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="main-content">
+                <div class="left-page">
+                    <div class="techname">
+                        <h1 class="wow">Swiper 輪播圖</h1>
+                        <h3 class="wow">
+                            " 一款免費且不需使用到jQuery的輪播套件 "
+                        </h3>
+                        <!-- star rating -->
+                        <div class="rating-wrapper wow">
+
+                            <!-- star 5 -->
+                            <input type="radio" id="5-star-rating" name="star-rating" value="5">
+                            <label for="5-star-rating" class="star-rating">
+                                <i class="fas fa-star d-inline-block"></i>
+                            </label>
+
+                            <!-- star 4 -->
+                            <input type="radio" id="4-star-rating" name="star-rating" value="4">
+                            <label for="4-star-rating" class="star-rating star">
+                                <i class="fas fa-star d-inline-block"></i>
+                            </label>
+
+                            <!-- star 3 -->
+                            <input type="radio" id="3-star-rating" name="star-rating" value="3">
+                            <label for="3-star-rating" class="star-rating star">
+                                <i class="fas fa-star d-inline-block"></i>
+                            </label>
+
+                            <!-- star 2 -->
+                            <input type="radio" id="2-star-rating" name="star-rating" value="2">
+                            <label for="2-star-rating" class="star-rating star">
+                                <i class="fas fa-star d-inline-block"></i>
+                            </label>
+
+                            <!-- star 1 -->
+                            <input type="radio" id="1-star-rating" name="star-rating" value="1">
+                            <label for="1-star-rating" class="star-rating star">
+                                <i class="fas fa-star d-inline-block"></i>
+                            </label>
+
+                        </div>
+                        <p class="wow">
+                            一款免費且輕量的輪播套件，使用時無須使用到jQuery，除了輪播效果外也可應用於幻燈片及跑馬燈，使用效能高，可用於不同行動裝置上，官網有提供許多參數可以設置呈現出不同效果。
+                            執行專案時利用Swiper套件可快速對多張圖片製作出燈箱、跑馬燈、幻燈片、圖片展示等效果，可自由更改CSS樣式將它美化，透過參數設置也可做出不同設定，如自動播放、展示圖片數量、能否觸碰操控，詳細數值均能自由設定，
+                            在執行專案時，可使過程更加快速便利，也能使專案內容更加豐富美觀，詳細內容可點擊下方前往Swiper官方網站與使用說明，點擊查看更多瀏覽其他補充資料。
+                        </p>
+                        <div class="link wow">
+                            <div class="linkbtn">
+                                <div class="website">
+                                    <a href="https://swiperjs.com/" target="_blank">官方網站</a>
+
+                                </div>
+                                <div class="intro">
+                                    <a href="https://swiperjs.com/get-started" target="_blank">使用方式</a>
+                                </div>
+                                <div class="more">
+                                    <button class="morebtn">查看更多</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="moreshow" style="display: none;">
+                            <ul>
+                                <li>
+                                    <span>補充資料：</span>
+                                    <br>
+                                    <a href="#">https://swiperjs.com/</a>
+                                </li>
+                                <li>
+                                    <span>輕旅行網頁：</span>
+                                    <br>
+                                    <a href="#">https://travel.yam.com/</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right-page">
+                    <div class="exampleimg wow">
+                        <!-- Swiper -->
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./picture/swiper範例.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./picture/交通部.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./picture/輕旅行s.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./picture/swiper網頁.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./picture/swiper範例.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./picture/交通部.png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./picture/輕旅行s.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./picture/swiper網頁.jpg" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bottom-page">
+                    <h2 class="bottomtitle wow">專案使用經驗</h2>
+                    <div class="project-container">
+                        <div class="oneproject">
+                            <div class="projectpic wow">
+                                <a href="https://travel.yam.com/">
+                                    <div class="proimg">
+                                        <img src="./picture/輕旅行.png">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="projectinfo wow">
+                                <a href="https://travel.yam.com/">
+                                    <h3>輕旅行網站</h3>
+                                    <p class="walkicon">
+                                        <i class="fa-solid fa-person-walking-luggage"></i>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="oneproject-2">
+                            <div class="projectpic wow">
+                                <a href="https://168.motc.gov.tw/">
+                                    <div class="proimg">
+                                        <img src="./picture/交通部.png">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="projectinfo wow">
+                                <a href="https://168.motc.gov.tw/">
+                                    <h3>交通安全入口網</h3>
+                                    <p class="walkicon">
+                                        <i class="fa-solid fa-person-walking-luggage"></i>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="oneproject">
+                            <div class="projectpic wow">
+                                <a href="https://travel.yam.com/">
+                                    <div class="proimg">
+                                        <img src="./picture/swiperproject.jpg">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="projectinfo wow">
+                                <a href="./tech-demo-page.html">
+                                    <h3>Swiper範例頁面</h3>
+                                    <p class="walkicon">
+                                        <i class="fa-solid fa-person-walking-luggage"></i>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a id="getFixed" class="go-top wow" href="#">
+                        <i class="fa-solid fa-circle-up"></i>
+                    </a>
+                    <a id="getFixed2" class="go-back wow" href="./tech-demo-menu.html">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </a>
+                </div>
+            
+            </div>
+
+        </div>
+        <!-- 選單內容 -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <div id="searchbar">
+                    <i class="fa-solid fa-magnifying-glass"></i>&nbsp;
+                    <input id="searchfield" type="search" placeholder="請輸入關鍵字">
+                </div>
+                <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- 選單 -->
+                <div class="accordion">
+                    <button class="main-acc-btn accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        專案目錄
+                    </button>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <button onclick="location.href='./index.html'" class="accordion-button collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collaps0"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapse0">
+                            ALL
+                        </button>
+                        <button class=" accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseinside1" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseinside1">
+                            2023
+                        </button>
+                        <!-- <div id="panelsStayOpen-collapseinside1" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headinginside1">
+                            <div class="accordion-body">
+                                <a href="./case.html">A專案</a>
+                            </div>
+                        </div> -->
+                        <button class=" accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseinside2" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseinside2">
+                            2022
+                        </button>
+                        <div id="panelsStayOpen-collapseinside2" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headinginside2">
+                            <div class="accordion-body">
+                                <a href="./case-christmas.html">2022台北耶誕愛無限</a>
+                            </div>
+                            <div class="accordion-body">
+                                <a href="./case-yuan.html">原鄉小百科</a>
+                            </div>
+                            <div class="accordion-body">
+                                <a href="./case-bishan.html">探索臺北360°</a>
+                            </div>
+                            <div class="accordion-body">
+                                <a href="./case-MVO.html">168交通安全入口網</a>
+                            </div>
+                            <div class="accordion-body">
+                                <a href="./case-city.html">臺北美學空間票選活動</a>
+                            </div>
+                            <div class="accordion-body">
+                                <a href="./case-road.html">路口安全改善通報專區</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="main-acc-btn accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        前端技術
+                    </button>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <button onclick="location.href='./tech-demo-menu.html'" class="accordion-button collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collaps0"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapse0">
+                            ALL
+                        </button>
+                        <button class=" accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseinside3" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseinside3">
+                            CLASS A
+                        </button>
+                        <div id="panelsStayOpen-collapseinside3" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headinginside3">
+                            <div class="accordion-body">
+                                <a href="./tech-demo-page.html">Swiper</a>
+                            </div>
+                        </div>
+                        <button class=" accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseinside4" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseinside4">
+                            CLASS B
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            copyright ©2022 yamedia Inc. All rights reserved.
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+            crossorigin="anonymous"></script>
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/3342b80b26.js" crossorigin="anonymous"></script>
+        <!-- jq -->
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <!-- smartphoto -->
+        <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <!-- wow.js -->
+        <script src="./js/wow.min.js"></script>
+    </body>
+    <style>
+        @font-face {
+            font-family: HanSerifHeavy;
+            src: url(./SourceHanSerifTW//SourceHanSerifTW-Heavy.otf);
+        }
+
+        @font-face {
+            font-family: HanSerifMedium;
+            src: url(./SourceHanSerifTW/SourceHanSerifTW-Medium.otf);
+        }
+
+        @font-face {
+            font-family: HanSerifSemi;
+            src: url(./SourceHanSerifTW/SourceHanSerifTW-SemiBold.otf);
+        }
+
+        @font-face {
+            font-family: HanSerifRegular;
+            src: url(./SourceHanSerifTW/SourceHanSerifTW-Regular.otf)
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+        }
+
+        /* 上方 */
+        .top {
+            background: white;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+            padding: 10px;
+            padding-left: 20px;
+            box-shadow: 0px 2px 2px #e6e6e6;
+            position: fixed;
+            z-index: 999;
+            height: 80px;
+        }
+
+        .top img {
+            width: 50%;
+        }
+
+
+        .btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: black;
+        }
+
+        .btn:hover {
+            color: #af5e5b;
+        }
+
+        .btn:focus {
+            color: #af5e5b;
+            border: none;
+            box-shadow: none;
+        }
+
+        .democontainer {
+            width: 100%;
+
+        }
+
+        /* 中間 */
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .left-page {
+            width: 45%;
+        }
+
+        .right-page {
+            padding-top: 100px;
+            width: 55%;
+        }
+
+        .techname {
+            margin-left: 5%;
+            width: 80%;
+            margin-bottom: 5%;
+        }
+
+        .techname h1 {
+            text-align: center;
+            color: #af5e5b;
+            font-family: HanSerifHeavy;
+            margin-bottom: 20px;
+            width: 70%;
+            padding: 10px;
+            animation: fadeInLeftBig;
+            /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s;
+            font-size: 3.2rem;
+            /* don't forget to set a duration! */
+        }
+
+        .techname h1::after {
+            content: " ";
+            display: block;
+            width: 500px;
+            height: 4px;
+            margin-left: 10px;
+            background-color: #ffe7df;
+            animation: fadeInLeftBig;
+            animation-duration: 2s;
+            /* transition: .4s .2s; */
+        }
+
+        .techname h3 {
+            margin-top: 20px;
+            font-family: HanSerifSemi;
+            text-indent: 2rem;
+            animation: fadeIn;
+            animation-duration: 5s;
+            color: #e4adab;
+            font-size: 1.8rem;
+        }
+
+        .techname p {
+            width: 90%;
+            background: rgb(255, 231, 223);
+            color: black;
+            margin: auto;
+            margin-top: 25px;
+            font-family: HanSerifRegular;
+            letter-spacing: 2.5px;
+            padding: 15px;
+            font-size: 1.2rem;
+            animation: fadeInUp;
+            animation-duration: 2s;
+            /* line-height:30px; */
+        }
+
+        .link {
+            margin-top: 30px;
+            animation: fadeInUp;
+            animation-duration: 4s;
+        }
+
+        .linkbtn {
+            width: 70%;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            background: #e4adab;
+            color: #fff;
+            font-size: 1.6rem;
+            font-family: HanSerifSemi;
+            margin-left: 35%;
+        }
+
+        .linkbtn a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .linkbtn a:hover {
+            color: #af5e5b
+        }
+
+        .website {
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: #fff 2px solid;
+        }
+
+        .intro {
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: #fff 2px solid;
+        }
+
+        .more {
+            width: 33%;
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .more button {
+            border: none;
+            background: transparent;
+            color: #FFF;
+        }
+
+        .more button:hover {
+            color: #af5e5b
+        }
+
+        .more button:focus {
+            color: #af5e5b
+        }
+
+        .moreshow {
+            width: 100%;
+            margin-top: 30px;
+            padding: 10px;
+            background: #e4adab;
+            color: #FFF;
+            font-family: 'Times New Roman', Times, serif, HanSerifSemi;
+            letter-spacing: 2px;
+            word-wrap: break-word;
+        }
+
+        .moreshow ul li {
+            list-style: none;
+            margin-bottom: 5px;
+        }
+
+        .moreshow a {
+            color: #fff;
+        }
+
+        /* 下方 */
+        .bottom-page {
+            width: 100%;
+            background-color: #ffe7df;
+            order: 3;
+            padding: 20px;
+        }
+
+        .bottomtitle {
+            font-family: HanSerifSemi;
+            font-size: 3rem;
+            color: #af5e5b;
+            margin-left: 5%;
+            animation: fadeInLeftBig;
+            animation-duration: 2s;
+        }
+
+        .bottomtitle::after {
+            content: " ";
+            display: block;
+            width: 300px;
+            height: 4px;
+            margin-left: 10px;
+            background-color: white;
+            animation: fadeInLeftBig;
+            animation-duration: 1.5s;
+            /* transition: .4s .2s; */
+        }
+
+        .project-container {
+            margin: auto;
+            margin-top: 2%;
+            max-width: 1200px;
+        }
+
+        .projectpic {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            animation: fadeIn;
+            animation-duration: 2s;
+        }
+
+        .projectinfo {
+            text-align: center;
+        }
+
+        .oneproject .projectinfo {
+            animation: fadeInRight;
+            animation-duration: 3s;
+        }
+
+        .oneproject-2 .projectinfo {
+            animation: fadeInLeft;
+            animation-duration: 3s;
+        }
+
+
+        .proimg {
+            max-width: 500px;
+            height: 300px;
+            padding: 15px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .proimg:hover {
+            border: 3px dashed #af5e5b;
+        }
+
+        .proimg img {
+            width: 100%
+        }
+
+        .oneproject {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        .projectpic,
+        .projectinfo {
+            width: 50%;
+        }
+
+        .projectinfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .projectinfo a {
+            text-decoration: none;
+            color: #111;
+        }
+
+        .projectinfo h3 {
+            font-family: HanSerifSemi;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        .projectinfo a:hover h3 {
+            color: #af5e5b;
+        }
+
+        .projectinfo p {
+            font-family: HanSerifRegular;
+            letter-spacing: 2px;
+            color: #111;
+            margin-top: -20px;
+        }
+
+        .projectinfo:hover h3 a {
+            color: #af5e5b;
+        }
+
+        .projectinfo:hover .fa-person-walking-luggage {
+            transform: translateX(0px);
+            transition: 2s;
+        }
+
+        .oneproject-2 {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 10px;
+        }
+
+        .walkicon {
+            text-align: right;
+            border-bottom: 2px solid #af5e5b;
+        }
+
+        .fa-person-walking-luggage {
+            transform: translateX(-50px);
+            font-size: 1.5rem;
+            color: #af5e5b;
+            transition: 2s;
+        }
+
+        /* 選單 */
+        .offcanvas-header {
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding-left: 40px;
+        }
+
+        /* 側邊目錄 */
+        .offcanvas-body {
+            /* background: black;
+            color: white; */
+            margin: 0;
+            padding: 0;
+        }
+
+        .accordion {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /* background: #111; */
+        }
+
+        .accordion-button {
+            /* background: #111;
+            color: white; */
+            border-bottom: 2px solid #e4adab;
+            font-family: HanSerifSemi;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: #e4adab;
+            color: white;
+            box-shadow: none;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: none;
+        }
+
+        .accordion-button::after {
+            background-image: none;
+        }
+
+        .accordion-button:hover {
+            background: #e4adab;
+            color: white;
+            box-shadow: none;
+        }
+
+        .accordion-button:active {
+            background: #e4adab;
+            color: white;
+            border: white;
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            background: #e4adab;
+            color: white;
+            border: white;
+            box-shadow: none;
+        }
+
+        .accordion:focus {
+            background: #111;
+            color: white;
+            border: white;
+        }
+
+        .accordion-icon:focus {
+            color: #FFF;
+        }
+
+        .accordion-body {
+            background: rgb(255, 231, 223);
+            border-bottom: 2px solid white;
+            padding: 0;
+            font-family: HanSerifRegular;
+            font-size: 1.2rem;
+        }
+
+        .accordion-body a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: rgb(68, 68, 68);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 15px;
+            padding-left: 30px;
+        }
+
+        .accordion-body a:hover {
+            background: #f5e7e6;
+            color: black;
+        }
+
+        .searchbar i {
+            display: inline;
+        }
+
+        .main-acc-btn:not(.collapsed) {
+            background: #af5e5b;
+        }
+
+        .main-acc-btn:focus {
+            background: #af5e5b;
+        }
+
+
+        .fa-magnifying-glass {
+            color: white
+        }
+
+        #searchfield {
+            display: inline-block;
+            width: 250px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .offcanvas-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1040;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+        }
+
+        .offcanvas-backdrop.fade {
+            opacity: 0;
+        }
+
+        .offcanvas-backdrop.show {
+            opacity: 0.5;
+        }
+
+        /* scrollbar */
+        ::-webkit-scrollbar {
+            background: white;
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgb(255, 231, 223);
+        }
+
+        /* 小標示 */
+        .go-top {
+            position: fixed;
+            right: 10px;
+            animation: fadeIn;
+            animation-duration: 3s;
+        }
+
+        .go-back {
+            position: fixed;
+            right: 10px;
+            animation: fadeIn;
+            animation-duration: 3s;
+            top: 640px;
+        }
+
+        .fa-circle-up {
+            font-size: 3rem;
+            color: #e4adab;
+        }
+
+        .fa-circle-up:hover {
+            color: #af5e5b;
+        }
+
+        .fa-circle-chevron-left {
+            font-size: 3rem;
+            color: #e4adab;
+        }
+
+        .fa-circle-chevron-left:hover {
+            color: #af5e5b;
+        }
+
+        /* 評分 */
+
+        .rating-wrapper {
+            direction: rtl !important;
+            margin-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            animation: bounceInLeft;
+            animation-duration: 4s;
+        }
+
+
+        .rating-wrapper label {
+            /* color: #c9ccd6; */
+            color: #ffbc6f;
+            cursor: pointer;
+            display: inline-flex;
+            font-size: 2rem;
+            transition: color 0.5s;
+        }
+
+        svg {
+            -webkit-text-fill-color: transparent;
+            -webkit-filter: drop-shadow (4px 1px 6px rgba(198, 206, 237, 1));
+            filter: drop-shadow(5px 1px 3px rgba(198, 206, 237, 1));
+        }
+
+        .rating-wrapper input {
+            height: 100%;
+            width: 100%;
+        }
+
+        .rating-wrapper input {
+            display: none;
+        }
+
+        .rating-wrapper label:hover,
+        .rating-wrapper label:hover~label,
+        .rating-wrapper input:checked~label {
+            color: #f8aa50;
+        }
+
+        .techname {
+            color: black
+        }
+
+        .exampleimg {
+            position: relative;
+            width: 100%;
+            margin: auto;
+            animation: fadeIn;
+            animation-duration: 4s;
+            margin-bottom: 30px;
+            background: #ffe7df;
+        }
+
+
+        /* swiper */
+        .swiper {
+            z-index: 0;
+            height: 600px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* background: #fff; */
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+        }
+
+        .swiper-slide img {
+            display: block;
+            height: 100%;
+            object-fit: contain;
+            image-rendering: -webkit-optimize-contrast;
+            object-position: center;
+
+        }
+
+        .swiper {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            width: 100%;
+        }
+
+        /* 下面小格 */
+        .mySwiper {
+            height: 150px;
+            box-sizing: border-box;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        .mySwiper .swiper-slide {
+            opacity: 0.4;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .footer {
+            width: 100%;
+            bottom: 0;
+            height: 50px;
+            box-shadow: 0px -2px 10px #e6e6e6;
+            z-index: 999;
+            padding-right: 20px;
+            line-height: 50px;
+            text-align: right;
+        }
+
+        @media screen and (min-width: 1500px) {
+            .left-page {
+                padding-top: 100px;
+            }
+        }
+
+
+        @media screen and (max-width: 1500px) {
+
+            /* 中間 */
+            .main-content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .right-page {
+                width: 100%;
+                order: 1;
+                /* background: #f8aa50; */
+            }
+
+            .exampleimg {
+                margin: auto;
+                margin-bottom: 20px;
+            }
+
+            .left-page {
+                order: 2;
+                width: 100%;
+            }
+
+            .techname {
+                margin: auto;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .techname h1 {
+                font-size: 3.5rem;
+            }
+
+            .techname h1::after {
+                width: 400px;
+            }
+
+            .techname h3 {
+                font-size: 1.7rem;
+            }
+
+            .techname p {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            /* 下方 */
+            .project-container {
+                margin-top: 5%;
+            }
+
+            .oneproject {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .oneproject-2 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .projectpic,
+            .projectinfo {
+                width: inherit;
+            }
+
+            .projectinfo h3 {
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 725px) {
+            .techname h1 {
+                width: 100%;
+                font-size: 2.5rem;
+            }
+
+            .bottomtitle {
+                font-size: 2.5rem;
+            }
+
+            .techname h3 {
+                width: 100%;
+                font-size: 1.8rem;
+                text-indent: 0rem;
+            }
+
+            .linkbtn {
+                font-size: 1rem;
+                margin: auto;
+                width: 90%;
+                padding: 10px;
+            }
+
+            .mySwiper {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+
+        new WOW().init();
+
+        $(document).ready(function () {
+            $(".morebtn").click(function () {
+                $(".moreshow").slideToggle();
+            })
+        });
+
+        jQuery(function ($) {
+            function fixDiv() {
+                var $cache = $('#getFixed');
+                if ($(window).scrollTop() > 100)
+                    $cache.css({
+                        'position': 'fixed',
+                        'top': '700px',
+                        'animation': 'fadeIn',
+                        'animation-duration': '3s'
+                    });
+                else
+                    $cache.css({
+                        'position': 'relative',
+                        'top': 'auto'
+                    });
+            }
+            $(window).scroll(fixDiv);
+            fixDiv();
+        });
+
+        jQuery(function ($) {
+            function fixDiv() {
+                var $cache = $('#getFixed2');
+                if ($(window).scrollTop() > 100)
+                    $cache.css({
+                        'position': 'fixed',
+                        'top': '640px',
+                        'animation': 'fadeIn',
+                        'animation-duration': '3s'
+                    });
+                else
+                    $cache.css({
+                        'position': 'relative',
+                        'top': 'auto'
+                    });
+            }
+            $(window).scroll(fixDiv);
+            fixDiv();
+        });
+    </script>
+
+</html>

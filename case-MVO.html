@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="shortcut icon" href="./picture/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>168交通安全入口網</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="top">
+                <div class="toptitle">
+                    <a href="./index.html"><img src="./picture/logo.png" alt=""></a>
+                </div>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-backdrop="true"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+                 <!-- 選單內容 -->
+                 <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+                 id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                 <div class="offcanvas-header">
+                     <div id="searchbar">
+                         <i class="fa-solid fa-magnifying-glass"></i>&nbsp;
+                         <input id="searchfield" type="search" placeholder="請輸入關鍵字">
+                     </div>
+                     <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas"
+                         aria-label="Close"></button>
+                 </div>
+                 <div class="offcanvas-body">
+                     <!-- 選單 -->
+                     <div class="accordion">
+                        <button class="main-acc-btn accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            專案目錄
+                        </button>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <button onclick="location.href='./index.html'" class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collaps0"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapse0">
+                                ALL
+                            </button>
+                            <button class=" accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseinside1" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseinside1">
+                                2023
+                            </button>
+                            <!-- <div id="panelsStayOpen-collapseinside1" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headinginside1">
+                                <div class="accordion-body">
+                                    <a href="./case.html">A專案</a>
+                                </div>
+                            </div> -->
+                            <button class=" accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseinside2" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseinside2">
+                                2022
+                            </button>
+                            <div id="panelsStayOpen-collapseinside2" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headinginside2">
+                                <div class="accordion-body">
+                                    <a href="./case-christmas.html">2022台北耶誕愛無限</a>
+                                </div>
+                                <div class="accordion-body">
+                                    <a href="./case-yuan.html">原鄉小百科</a>
+                                </div>
+                                <div class="accordion-body">
+                                    <a href="./case-bishan.html">探索臺北360°</a>
+                                </div>
+                                <div class="accordion-body">
+                                    <a href="./case-MVO.html">168交通安全入口網</a>
+                                </div>
+                                <div class="accordion-body">
+                                    <a href="./case-city.html">臺北美學空間票選活動</a>
+                                </div>
+                                <div class="accordion-body">
+                                    <a href="./case-road.html">路口安全改善通報專區</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="main-acc-btn accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            前端技術
+                        </button>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <button onclick="location.href='./tech-demo-menu.html'" class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collaps0"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapse0">
+                                ALL
+                            </button>
+                            <button class=" accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseinside3" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseinside3">
+                                CLASS A
+                            </button>
+                            <div id="panelsStayOpen-collapseinside3" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headinginside3">
+                                <div class="accordion-body">
+                                    <a href="./tech-demo-page.html">Swiper</a>
+                                </div>
+                            </div>
+                            <button class=" accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseinside4" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseinside4">
+                                CLASS B
+                            </button>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+            <div class="main">
+                <div class="bannerimg">
+                    <div class="bannertext">
+                        <h1>168交通安全入口網</h1>
+                        <p>" 交通事故頻傳，遵守交通規則、路口減速慢行，才能確保行車安全。 "</p>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="main-intro">
+                        <div class="introbar">
+                            <ul>
+                                <li>
+                                    <span>Client：</span>
+                                    <span>交通部道路交通安全督導委員會</span>
+                                </li>
+                                <li>
+                                    <span>Category：
+                                    </span>
+                                    <span>資訊網站</span>
+                                </li>
+                                <li>
+                                    <span>Statement：
+                                    </span>
+                                    <span>企劃設計、前後端工程</span>
+                                </li>
+                                <li style="border: none;">
+                                    <span>Website：
+                                    </span>
+                                    <span>
+                                        <a href="https://168.motc.gov.tw/">
+                                            <span class="linktext">https://168.motc.gov.tw/&nbsp;</span>
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>
+                           天空傳媒為交通部道路交通安全督導委員會製作之網站，內含台灣各地道路安全資訊，分區塊以輪播方式呈現不同主題之道安資訊，並將資訊分類整理在導覽列中，另有目錄按鈕呈現網站中的所有資訊類別，讓使用者能透過網站輕鬆查找所需的道路安全資訊，並且能夠註冊為會員並使用相關的會員功能。
+                        </p>
+                    </div>
+                </div>
+                <div class="rwdimgsection wow">
+                    <div class="rwdimg">
+                        <img src="./picture/交通部rwd.png" alt="">
+                    </div>
+                </div>
+                <div class="case-detail-content">
+                    <div class="case-detail">
+                        <div class="detail-left">
+                            <div class="detailimg">
+                                <img src="./picture/交通部f1.png">
+                            </div>
+                        </div>
+                        <div class="detail-right">
+                            <div class="detail-text">
+                                <h3>
+                                    輪播大圖分類導覽 畫面簡約美觀
+                                </h3>
+                                <p>
+                                    網站首頁以大圖示的幻燈片呈現不同資訊，並在右側以不同圖示分別呈現不同對象的道安資訊，上方則以導覽列將龐大的資訊內容做分類整理，使用者可透過上方導覽列查找所需的資訊，下方則是以區塊方式呈現不同類別的資訊內容，使畫面乾淨整潔易觀看。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-detail-re">
+                        <div class="detail-left">
+                            <div class="detailimg" style="max-width: 500px;max-height: 265px;">
+                                <img src="./picture/交通部f2.png">
+                            </div>
+                        </div>
+                        <div class="detail-right">
+                            <div class="detail-text detail-text-2">
+                                <h3>
+                                    會員註冊登入功能 活動點數換好禮
+                                </h3>
+                                <p>
+                                  網站含會員註冊/登入的功能，除了單純的瀏覽資訊外，使用者可以註冊成為會員，參與網站每周的活動，學習知識並有機會得到好禮，也能透過累積會員點數，將文創商品帶回家。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-detail">
+                        <div class="detail-left">
+                            <div class="detailimg">
+                                <img src="./picture/交通部f3.png">
+                            </div>
+                        </div>
+                        <div class="detail-right">
+                            <div class="detail-text">
+                                <h3>網站地圖按鈕展示完整資訊</h3>
+                                <p>
+                                    利用右上角網站地圖按鈕收合完整的資訊導覽頁面，將眾多資訊分門別類在按鈕中，點擊再展示，可使網頁更精簡整潔，同時又可讓使用者透過網站地圖查找需要的資訊，兼具美觀又實用。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="epilogue">
+                    <div class="epilogue-left">
+                        <div class="epi-text">
+                            <h3>
+                                資訊美觀簡約易瀏覽 會員活動得好禮
+                            </h3>
+                            <p>
+                               在交通安全入口網將眾多的道路安全資訊整理並分類，呈現於網站地圖中，主頁面以區塊方式呈現輪播圖與資訊，並在不同分類中以圖示標註，讓畫面看起來更加整潔簡約，除了畫面外也有會員註冊/登入功能，使用者可以透過會員系統參加活動或累積回饋來贏得好禮。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="epilogue-right">
+                        <div class="epi-img">
+                            <img src="./picture/streamlinehq-about-us-free-sample-400.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a id="getFixed" class="go-top wow" href="#">
+                    <i class="fa-solid fa-circle-up"></i>
+                </a>
+                <a id="getFixed2" class="go-back wow" href="./index.html">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                </a>
+            </div>
+            <div class="blankspace"></div>
+            <div class="footer">
+                copyright ©2022 yamedia Inc. All rights reserved.
+            </div>
+            <!-- fontawesome -->
+            <script src="https://kit.fontawesome.com/3342b80b26.js" crossorigin="anonymous"></script>
+            <!-- jq -->
+            <script src="https://code.jquery.com/jquery-3.6.1.js"
+                integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <!-- wow.js -->
+            <script src="./js/wow.min.js"></script>
+    </body>
+    <style>
+        @font-face {
+            font-family: HanSerifHeavy;
+            src: url(./SourceHanSerifTW//SourceHanSerifTW-Heavy.otf);
+        }
+
+        @font-face {
+            font-family: HanSerifMedium;
+            src: url(./SourceHanSerifTW/SourceHanSerifTW-Medium.otf);
+        }
+
+        @font-face {
+            font-family: HanSerifSemi;
+            src: url(./SourceHanSerifTW/SourceHanSerifTW-SemiBold.otf);
+        }
+
+        @font-face {
+            font-family: HanSerifRegular;
+            src: url(./SourceHanSerifTW/SourceHanSerifTW-Regular.otf)
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            height: 100%;
+        }
+
+        /* 動畫 */
+        #preloader {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            z-index: 8888;
+        }
+
+        .page-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .top {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            padding-left: 20px;
+            background: #FFF;
+            box-shadow: 0px 2px 10px #e6e6e6;
+            height: 80px;
+            position: fixed;
+            z-index: 99;
+        }
+
+        .top img {
+            width: 50%;
+        }
+
+        .main {
+            width: 100%;
+            padding-top: 80px;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .bannerimg {
+            margin: auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            max-width: 1600px;
+            height: 450px;
+            background-image: url(./picture/交通部bg.png);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bannertext {
+            text-align: center;
+            width: 60%;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 10px;
+        }
+
+        .bannertext h1 {
+            font-family: HanSerifHeavy;
+        }
+
+        .bannertext p {
+            font-family: HanSerifMedium;
+            font-size: 1.2rem;
+        }
+
+        .main-intro {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            font-family: HanSerifMedium;
+            text-align: justify;
+        }
+
+        .main-intro p {
+            margin: auto;
+            text-align: left;
+        }
+
+        .introbar {
+            background: rgb(228, 173, 171);
+            color: white;
+            text-align: center;
+        }
+
+        .introbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .introbar ul li {
+            text-align: center;
+            list-style: none;
+            display: inline-block;
+            margin-right: 20px;
+            padding-right: 20px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .rwdimgsection {
+            background: rgb(255, 231, 223);
+            height: 500px;
+            text-align: center;
+            margin-top: 30px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* .rwdimgsection::after {
+            content: "";
+            background: black;
+            height: 500px;
+        } */
+        .rwdimgsection::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            width: 200px;
+            height: 120px;
+            right: 15%;
+            top: -10px;
+            background-color: transparent;
+            border-top: 5px solid #e4adab;
+            border-right: 5px solid #e4adab;
+            animation: fadeInRight;
+            animation-duration: 5s;
+        }
+
+        .redimgsection:hover .rwdimgsection::before {
+            animation: fadeInRight;
+            animation-duration: 5s;
+        }
+
+        .rwdimgsection::after {
+            content: " ";
+            display: block;
+            width: 200px;
+            height: 120px;
+            position: absolute;
+            bottom: -10px;
+            left: 15%;
+            background-color: transparent;
+            border-left: 5px solid #e4adab;
+            border-bottom: 5px solid #e4adab;
+            animation: fadeInLeft;
+            animation-duration: 10s;
+        }
+
+        .rwdimg {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .rwdimg img {
+            width: 80%;
+            margin: auto;
+        }
+
+        .halfbg {
+            background: white;
+            height: 200px;
+            bottom: 0;
+        }
+
+        .case-detail-content {
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 80px;
+        }
+
+        .case-detail {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .case-detail-re {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .case-detail-re .detail-left {
+            display: flex;
+            justify-content: right;
+        }
+
+        .case-detail-re .detail-text p {
+            padding-left: 10px;
+        }
+        .detail-text p{
+        font-size: 1.2rem;
+        }
+
+        .detail-left {
+            width: 50%;
+        }
+
+        .detailimg {
+            border: rgb(255, 230, 229) 2px solid;
+            margin: 10px;
+            max-width: 500px;
+            height: 265px;
+            overflow: hidden;
+            transition: 2s;
+        }
+        .detailimg img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .detailimg:hover {
+            cursor: pointer;
+            border: 2px solid #af5e5b;
+        }
+
+        .detailimg:hover img {
+            transform: scale(1.2);
+            transition: 2s;
+        }
+
+        .detailimg img {
+            width: 100%;
+            height: 100%;
+            transition: 2s;
+        }
+
+        .case-detail-content .detail-right {
+            text-align: center;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .case-detail-re .detail-right {
+            text-align: center;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding-right: 20px; */
+        }
+
+        .detail-text {
+            position: relative;
+            border-bottom: 5px solid rgb(255, 231, 223);
+        }
+
+        .detail-text:hover {
+            cursor: pointer;
+        }
+
+        .detail-text p::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0px;
+            height: 40px;
+            border-bottom: #af5e5b 5px solid;
+            right: 0;
+            transition: 2s;
+        }
+
+        .detail-text:hover p::after {
+            width: 500px;
+        }
+
+        .detail-text-2 p::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0px;
+            height: 40px;
+            border-bottom: #af5e5b 5px solid;
+            left: 0;
+            transition: 2s;
+        }
+
+        .detail-text h3 {
+            font-family: HanSerifMedium;
+        }
+
+        .detail-text p {
+            text-align: left;
+            font-family: HanSerifRegular;
+        }
+
+        .epilogue {
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            background: rgb(255, 231, 223);
+            padding: 30px;
+        }
+
+        .epilogue-left,
+        .epilogue-right {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .epi-text {
+            width: 70%;
+        }
+
+        .epilogue-right {
+            padding-right: 20%;
+        }
+
+        .epi-text h3 {
+            font-family: HanSerifMedium;
+        }
+
+        .epi-text p {
+            font-family: HanSerifRegular;
+            text-align: justify;
+            font-size: 1.2rem;
+        }
+
+        .epi-img {
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            margin-bottom: 100px;
+        }
+
+        .epi-img img {
+            width: 100%;
+        }
+
+        .blankspace {
+            width: 100%;
+            height: 80px;
+        }
+
+        .footer {
+            width: 100%;
+            bottom: 0;
+            height: 50px;
+            box-shadow: 0px -2px 10px #e6e6e6;
+            z-index: 999;
+            padding-right: 20px;
+            line-height: 50px;
+            text-align: right;
+        }
+
+        /* 選單 */
+        .offcanvas-header {
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding-left: 40px;
+        }
+
+        /* 側邊目錄 */
+        .offcanvas-body {
+            /* background: black;
+            color: white; */
+            margin: 0;
+            padding: 0;
+        }
+
+        .accordion {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /* background: #111; */
+        }
+
+        .accordion-button {
+            /* background: #111;
+            color: white; */
+            border-bottom: 2px solid #e4adab;
+            font-family: HanSerifSemi;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: #e4adab;
+            color: white;
+            box-shadow: none;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: none;
+        }
+
+        .accordion-button::after {
+            background-image: none;
+        }
+
+        .accordion-button:hover {
+            background: #e4adab;
+            color: white;
+            box-shadow: none;
+        }
+
+        .accordion-button:active {
+            background: #e4adab;
+            color: white;
+            border: white;
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            background: #e4adab;
+            color: white;
+            border: white;
+            box-shadow: none;
+        }
+        .main-acc-btn:not(.collapsed) {
+            background: #af5e5b;
+        }
+        .main-acc-btn:focus {
+            background: #af5e5b;
+        }
+
+        .accordion:focus {
+            background: #111;
+            color: white;
+            border: white;
+        }
+
+        .accordion-icon:focus {
+            color: #FFF;
+        }
+
+        .accordion-body {
+            background: rgb(255, 231, 223);
+            border-bottom: 2px solid white;
+            padding: 0;
+            font-family: HanSerifRegular;
+            font-size: 1.2rem;
+        }
+
+        .accordion-body a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: rgb(68, 68, 68);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 15px;
+            padding-left: 30px;
+        }
+
+        .accordion-body a:hover {
+            background: #f5e7e6;
+            color: black;
+        }
+
+        .searchbar i {
+            display: inline;
+        }
+
+        .fa-magnifying-glass {
+            color: white
+        }
+
+        #searchfield {
+            display: inline-block;
+            width: 250px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .offcanvas-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1040;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+        }
+
+        .offcanvas-backdrop.fade {
+            opacity: 0;
+        }
+
+        .offcanvas-backdrop.show {
+            opacity: 0.5;
+        }
+
+        /* scrollbar */
+        ::-webkit-scrollbar {
+            background: white;
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgb(255, 231, 223);
+        }
+
+        /* 小標示 */
+        .go-top {
+            position: fixed;
+            right: 10px;
+            animation: fadeIn;
+            animation-duration: 3s;
+        }
+
+        .go-back {
+            position: fixed;
+            right: 10px;
+            animation: fadeIn;
+            animation-duration: 3s;
+            top: 640px;
+        }
+
+        .fa-circle-up {
+            font-size: 3rem;
+            color: #e4adab;
+        }
+
+        .fa-circle-up:hover {
+            color: #af5e5b;
+        }
+
+        .fa-circle-chevron-left {
+            font-size: 3rem;
+            color: #e4adab;
+        }
+
+        .fa-circle-chevron-left:hover {
+            color: #af5e5b;
+        }
+
+        @media screen and (max-width: 1300px) {
+            .rwdimg img {
+                width: 75%;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .bannertext {
+                width: 90%;
+            }
+
+            .introbar ul li:nth-child(3) {
+                border: none;
+            }
+
+            .main-intro p {
+                margin-left: 5px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .epilogue {
+                flex-direction: column;
+            }
+
+            .epilogue-left,
+            .epilogue-right {
+                width: 100%;
+            }
+
+            .epilogue-right {
+                padding-right: 0%;
+            }
+
+            .epi-text {
+                width: 100%;
+            }
+
+            .epi-img {
+                position: relative;
+                width: 400px;
+                height: 300px;
+                margin-bottom: 0px;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .rwdimg img {
+                width: 85%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .top {
+                height: 50px;
+            }
+
+            .top img {
+                width: 35%;
+            }
+
+            .main {
+                padding-top: 50px;
+            }
+
+            .case-detail {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+
+            .case-detail .detail-right p {
+                margin-left: 10px;
+            }
+
+            .case-detail-re {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+
+            .detailimg {
+                margin: auto;
+                margin-bottom: 10px;
+            }
+
+            .detail-left {
+                width: 100%;
+                text-align: center;
+            }
+
+            .case-detail-content .detail-right {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 720px) {
+            .introbar ul li {
+                border: none;
+            }
+                 .linktext {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .linktext {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        jQuery(function ($) {
+            function fixDiv() {
+                var $cache = $('#getFixed');
+                if ($(window).scrollTop() > 100)
+                    $cache.css({
+                        'position': 'fixed',
+                        'top': '700px',
+                        'animation': 'fadeIn',
+                        'animation-duration': '3s'
+                    });
+                else
+                    $cache.css({
+                        'position': 'relative',
+                        'top': 'auto'
+                    });
+            }
+            $(window).scroll(fixDiv);
+            fixDiv();
+        });
+        
+        jQuery(function ($) {
+            function fixDiv() {
+                var $cache = $('#getFixed2');
+                if ($(window).scrollTop() > 100)
+                    $cache.css({
+                        'position': 'fixed',
+                        'top': '640px',
+                        'animation': 'fadeIn',
+                        'animation-duration': '3s'
+                    });
+                else
+                    $cache.css({
+                        'position': 'relative',
+                        'top': 'auto'
+                    });
+            }
+            $(window).scroll(fixDiv);
+            fixDiv();
+        });
+        
+        new WOW().init();
+    </script>
+
+</html>
